@@ -104,7 +104,7 @@ def url_normalize url
 end
 
 EM.run do
-  EM::PeriodicTimer.new(5) do
+  EM::PeriodicTimer.new(60) do
     # 1ページのみ取得する
     get_all_report
   end
